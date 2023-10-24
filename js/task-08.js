@@ -19,7 +19,6 @@ function onFormSubmit(event) {
                 password: userPass
             }
             console.log(objectData);
+            event.currentTarget.reset();
         }
-
-        event.currentTarget.reset();
 }

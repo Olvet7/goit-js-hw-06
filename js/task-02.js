@@ -16,8 +16,6 @@ const ingredientElement = ingredients.map((ingredient) => {
   return element;
 })
 
-ingredientElement.forEach((element) => {
-  listElement.appendChild(element);
-})
+  listElement.append(...ingredientElement);
 
 console.dir(listElement);

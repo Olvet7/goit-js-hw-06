@@ -39,3 +39,13 @@ img {
   justify-content: center;
   gap: 22px;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li img {
+  height: 100%;
+} 

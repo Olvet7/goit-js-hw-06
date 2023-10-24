@@ -8,7 +8,6 @@ const refs = {
 // "Вішаємо" слухача подій на input 
 
 refs.nameElementInput.addEventListener('input', onInputChange);
-refs.nameElementInput.addEventListener('blur', onInputBlur);
 
 // Функція 
 

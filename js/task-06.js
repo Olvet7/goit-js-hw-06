@@ -19,8 +19,8 @@ function onInputBlur(event) {
 
     inputEl.classList.remove('valid', 'invalid');
     
-    userValue.length < minLength || !userValue
-    ? inputEl.classList.add('invalid') 
-    : inputEl.classList.add('valid'); 
+    userValue.length ==== minLength
+    ? inputEl.classList.add('valid') 
+    : inputEl.classList.add('invalid'); 
 }
 

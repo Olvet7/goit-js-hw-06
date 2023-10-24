@@ -17,19 +17,10 @@ const images = [
 const gallery = document.querySelector(`.gallery`);
 console.log(gallery);
 
-// Створюємо масив елементів для галереї методом map  
+images.forEach((image) => {
+  const liElemets = `<li>
+  <img src="${image.url}" alt="${image.alt}">
+</li>`;
 
-const galleryElements = images.map((image) => {
-  const imageEl = document.createElement("img");
-  imageEl.src = image.url;
-  imageEl.alt = image.alt;
-  // gallery.appendChild(imageEl);
-  return imageEl;
+gallery.insertAdjacentHTML("beforeend", liElemets);
 })
-
-// Додаємо в DOM розпилений масив картинок
-gallery.append(...galleryElements)
-
-
-
-
