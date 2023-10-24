@@ -17,6 +17,7 @@ const images = [
 const gallery = document.querySelector(`.gallery`);
 console.log(gallery);
 
+//Вносимо всі елементи списку з картинками в список 
 images.forEach((image) => {
   const liElemets = `<li>
   <img src="${image.url}" alt="${image.alt}">
