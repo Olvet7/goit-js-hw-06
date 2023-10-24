@@ -12,8 +12,8 @@ refs.nameElementInput.addEventListener('input', onInputChange);
 // Функція 
 
 function onInputChange(event) {
-
-    if (!event.currentTarget.value) {
+    const inputTrim = event.currentTarget.value.trim();
+    if (!event.currentTarget.value || !inputTrim) {
         refs.nameElementOutput.textContent = 'Anonimus'
     } else {
         refs.nameElementOutput.textContent = event.currentTarget.value
