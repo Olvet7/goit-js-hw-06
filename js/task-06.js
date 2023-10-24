@@ -13,14 +13,17 @@ function onInputChange(event) {
 
 // Функція на Blur
 function onInputBlur(event) {
-    const userValue = event.currentTarget.value;
-    
-    let minLength = 6;
+    const userValue = event.currentTarget.value.length;
+    console.log(userValue);
+    const validLength = Number(inputEl.dataset.length);
+    console.log(validLength);
 
     inputEl.classList.remove('valid', 'invalid');
     
-    userValue.length ==== minLength
-    ? inputEl.classList.add('valid') 
-    : inputEl.classList.add('invalid'); 
+    if (userValue === validLength) {
+        inputEl.classList.add('valid');
+    } else {
+        inputEl.classList.add('invalid');
+    }
 }
 
