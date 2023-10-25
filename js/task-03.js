@@ -16,12 +16,13 @@ const images = [
 // Підготовлюю місце для додавання в DOM
 const gallery = document.querySelector(`.gallery`);
 console.log(gallery);
+let liElemets = '';
 
 //Вносимо всі елементи списку з картинками в список 
 images.forEach((image) => {
-  const liElemets = `<li>
+  liElemets += `<li>
   <img src="${image.url}" alt="${image.alt}">
 </li>`;
+})
 
 gallery.insertAdjacentHTML("beforeend", liElemets);
-})
